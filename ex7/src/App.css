@@ -1,0 +1,74 @@
+.cards-page {
+  min-height: 100vh;
+  padding: 0;
+  color: #161616;
+}
+
+.cards-page h1 {
+  margin: 0 0 8px;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+.cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 21px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.cards-row > * {
+  width: auto;
+  max-width: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.car-card {
+  min-height: 305px;
+  padding: 20px 22px 0;
+  border-width: 1px;
+  border-radius: 5px;
+  color: #080808;
+  text-align: center;
+}
+
+.car-card.card-blue {
+  border-color: #1c63cf;
+  background: #347df1;
+}
+
+.car-card.card-yellow {
+  border-color: #d8a728;
+  background: #ffc846;
+}
+
+.car-card.card-red {
+  border-color: #af3037;
+  background: #cc4149;
+}
+
+.car-card .card-img-top {
+  width: 100%;
+  height: 235px;
+  border-radius: 0;
+  object-fit: fill;
+}
+
+.car-card .card-body {
+  padding: 0;
+}
+
+.car-card .card-text {
+  margin: 1px 0 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media (max-width: 767px) {
+  .cards-page { padding: 0 12px 12px; }
+  .cards-row { grid-template-columns: 1fr; }
+  .car-card { margin-bottom: 16px; }
+}

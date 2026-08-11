@@ -1,0 +1,550 @@
+:root {
+  --fpt-orange: #f58b2a;
+  --fpt-dark-orange: #ed7939;
+  --fpt-nav-bg: #ead0ad;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Exercises 1 and 3 */
+.grid-page {
+  color: #202428;
+}
+
+.grid-jumbotron {
+  min-height: 400px;
+  padding: 135px 5.4% 70px;
+}
+
+.grid-jumbotron.compact {
+  min-height: 364px;
+  padding-top: 118px;
+}
+
+.grid-jumbotron h1 {
+  font-size: clamp(4rem, 5.1vw, 7.5rem);
+  font-weight: 400;
+}
+
+.grid-content {
+  width: 86.6%;
+  margin: 70px auto 60px;
+}
+
+.grid-content.with-navigation {
+  margin-top: 157px;
+}
+
+.grid-demo {
+  padding: 0;
+}
+
+.grid-cell {
+  min-height: 147px;
+  padding: 8px 28px;
+  border: 2px solid #888;
+  background: #d3d3d3;
+  font-size: 30px;
+}
+
+.grid-footer {
+  min-height: 88px;
+  background: #d5c7c7;
+  text-align: center;
+  font-size: 58px;
+  line-height: 88px;
+}
+
+.grid-footer.tall-footer {
+  min-height: 112px;
+  font-size: 72px;
+  line-height: 112px;
+}
+
+.grid-nav {
+  gap: 10px;
+  padding: 44px 1.4% 0;
+  font-size: 30px;
+}
+
+.grid-nav .nav-link {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+/* Exercise 2 */
+.intro-jumbotron {
+  min-height: 402px;
+  padding: 136px 32px 70px;
+}
+
+.intro-jumbotron h1 {
+  font-size: clamp(3.2rem, 4.8vw, 7rem);
+}
+
+.intro-logo-row {
+  padding: 58px 8% 40px;
+}
+
+.intro-logo {
+  width: 100%;
+  max-width: 580px;
+  aspect-ratio: 580 / 450;
+  object-fit: contain;
+}
+
+/* Exercise 4 */
+.simple-fpt-page {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.simple-header {
+  padding-top: 16px;
+  background: #f29226;
+}
+
+.simple-logo {
+  width: min(900px, 70vw);
+}
+
+.simple-nav {
+  padding: 12px 0 22px;
+  font-size: 31px;
+}
+
+.simple-nav a {
+  margin: 0 8px;
+  color: #fff;
+}
+
+.simple-main {
+  padding: 82px 20px 70px;
+}
+
+.simple-main section + section {
+  margin-top: 46px;
+}
+
+.simple-main h2 {
+  margin-bottom: 38px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.simple-main p {
+  font-size: 31px;
+}
+
+.simple-footer {
+  padding: 54px 20px;
+  background: #f5ce82;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Exercise 5 */
+.fpt-page {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #292c2f;
+  background: #fff;
+}
+
+.fpt-content-width {
+  width: 87.9%;
+  margin: 0 auto;
+}
+
+.fpt-navbar-inner {
+  width: 84.9%;
+  margin: 0 auto;
+}
+
+.fpt-navbar {
+  min-height: 207px;
+  background: var(--fpt-nav-bg);
+}
+
+.fpt-navbar-inner {
+  min-height: 207px;
+  display: grid;
+  grid-template-columns: 190px 1fr auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.fpt-brand img {
+  display: block;
+  width: 170px;
+  height: 132px;
+  object-fit: fill;
+}
+
+.fpt-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 32px;
+}
+
+.fpt-nav a {
+  color: #ed8352;
+  white-space: nowrap;
+}
+
+.fpt-nav a + a {
+  margin-left: 8px;
+}
+
+.fpt-nav span {
+  margin-right: 2px;
+  font-size: 0.78em;
+}
+
+.fpt-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 28px;
+}
+
+.fpt-search input {
+  width: 370px;
+  height: 57px;
+  padding: 7px 10px;
+  border: 2px solid #a6a6a6;
+  background: #fff;
+  font: inherit;
+}
+
+.fpt-hero {
+  padding: 135px 2.8% 134px;
+  background: var(--fpt-orange);
+}
+
+.fpt-hero img {
+  display: block;
+  width: 96.6%;
+  height: auto;
+}
+
+.fpt-breadcrumb {
+  width: fit-content;
+  min-height: 98px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 0 30px;
+  border-radius: 0 0 6px 6px;
+  background: #eceff1;
+  color: #72767b;
+  font-size: 28px;
+}
+
+.fpt-breadcrumb a {
+  color: #ed8050;
+}
+
+.students-section {
+  padding-top: 139px;
+  padding-bottom: 100px;
+}
+
+.students-section h1 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 500;
+}
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 56px;
+  padding-left: 30px;
+}
+
+.student-card {
+  overflow: hidden;
+  border-color: #d5d8da;
+  box-shadow: none;
+}
+
+.student-photo {
+  width: 100%;
+  aspect-ratio: 883 / 788;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  object-fit: fill;
+}
+
+.student-card-body {
+  min-height: 347px;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 40px 40px;
+  font-size: 28px;
+}
+
+.student-id {
+  margin: 0 0 34px;
+  text-align: center;
+}
+
+.student-meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 25px;
+}
+
+.student-meta > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-location {
+  text-align: right;
+}
+
+.student-meta label {
+  margin-top: 6px;
+  white-space: nowrap;
+}
+
+.student-meta input {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: -3px;
+}
+
+.student-submit {
+  align-self: center;
+  margin-top: auto;
+  padding: 15px 25px;
+  border: 2px solid #777;
+  border-radius: 5px;
+  background: var(--fpt-orange);
+  color: #fff;
+  font-size: 28px;
+}
+
+.student-submit:hover,
+.student-submit:focus {
+  border-color: #666;
+  background: #e87a21;
+  color: #fff;
+}
+
+.fpt-footer {
+  min-height: 423px;
+  background: var(--fpt-dark-orange);
+}
+
+.footer-content {
+  width: 84.9%;
+  min-height: 423px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 47px;
+}
+
+.address-block h2 {
+  margin: 0 0 15px;
+  font-size: 36px;
+}
+
+.address-block p {
+  margin: 5px 0;
+  font-size: 25px;
+}
+
+.address-block a {
+  color: #3464c7;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-top: 100px;
+}
+
+.social-links a {
+  color: #22292d;
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 0.68;
+  text-align: center;
+}
+
+.social-links a:nth-child(5) {
+  font-size: 18px;
+}
+
+.copyright {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  left: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 27px;
+}
+
+@media (max-width: 1200px) {
+  .fpt-navbar-inner {
+    grid-template-columns: 135px 1fr auto;
+  }
+
+  .fpt-brand img {
+    width: 130px;
+    height: 90px;
+  }
+
+  .fpt-nav,
+  .fpt-search,
+  .student-card-body,
+  .fpt-breadcrumb {
+    font-size: 20px;
+  }
+
+  .fpt-search input {
+    width: 180px;
+    height: 40px;
+  }
+
+  .students-section h1 {
+    font-size: 40px;
+  }
+
+  .student-card-body {
+    min-height: 260px;
+    padding: 25px;
+  }
+
+  .student-submit {
+    padding: 10px 18px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-jumbotron,
+  .grid-jumbotron.compact {
+    min-height: 220px;
+    padding-top: 72px;
+  }
+
+  .grid-jumbotron h1 {
+    font-size: 3rem;
+  }
+
+  .grid-cell {
+    min-height: 90px;
+    padding: 8px 12px;
+    font-size: 20px;
+  }
+
+  .grid-footer {
+    font-size: 36px;
+  }
+
+  .grid-footer.tall-footer {
+    min-height: 88px;
+    font-size: 36px;
+    line-height: 88px;
+  }
+
+  .grid-nav {
+    padding-top: 25px;
+    font-size: 18px;
+  }
+
+  .fpt-content-width,
+  .fpt-navbar-inner {
+    width: 92%;
+  }
+
+  .fpt-navbar-inner {
+    grid-template-columns: auto 1fr;
+    min-height: 150px;
+    padding: 12px 0;
+  }
+
+  .fpt-navbar {
+    min-height: 150px;
+  }
+
+  .fpt-nav {
+    justify-content: flex-end;
+    font-size: 15px;
+  }
+
+  .fpt-search {
+    grid-column: 1 / -1;
+    justify-self: end;
+    font-size: 16px;
+  }
+
+  .fpt-hero {
+    padding: 45px 4% 50px;
+  }
+
+  .fpt-breadcrumb {
+    min-height: 64px;
+    font-size: 17px;
+  }
+
+  .students-section {
+    padding-top: 60px;
+  }
+
+  .students-section h1 {
+    font-size: 32px;
+  }
+
+  .students-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-left: 0;
+  }
+
+  .student-card-body {
+    font-size: 17px;
+  }
+
+  .student-meta input {
+    width: 17px;
+    height: 17px;
+  }
+
+  .fpt-footer,
+  .footer-content {
+    min-height: 350px;
+  }
+
+  .address-block h2 {
+    font-size: 26px;
+  }
+
+  .address-block p {
+    font-size: 16px;
+  }
+
+  .social-links {
+    gap: 12px;
+    padding-top: 85px;
+  }
+
+  .social-links a {
+    font-size: 24px;
+  }
+}

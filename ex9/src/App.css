@@ -1,0 +1,208 @@
+.about-me-page,
+.hello-page,
+.counter-page,
+.simple-card-page {
+  min-height: 100vh;
+}
+
+.about-me-page {
+  padding: 24px 20px;
+  background: #f8f8f8;
+}
+
+.profile-card {
+  min-height: 450px;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  padding: 30px 8px;
+  border: 1px solid #c7c7c7;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 20%);
+}
+
+.profile-card img {
+  width: min(1040px, 98%);
+  height: auto;
+}
+
+.profile-copy {
+  align-self: start;
+  padding-top: 57px;
+  text-align: center;
+}
+
+.profile-copy h1 {
+  margin: 0 0 45px;
+  font-size: 40px;
+}
+
+.profile-copy p {
+  margin: 0;
+  font-size: 34px;
+}
+
+.hello-page,
+.counter-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+}
+
+.hello-page h1 {
+  font-size: 64px;
+}
+
+.counter-card {
+  min-width: 360px;
+  padding: 36px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 15%);
+  text-align: center;
+}
+
+.counter-card h1 {
+  margin-top: 0;
+  font-size: 38px;
+}
+
+.counter-card p {
+  margin: 20px 0;
+  font-size: 54px;
+}
+
+.counter-card button {
+  margin: 0 5px;
+  padding: 10px 17px;
+  border: 0;
+  border-radius: 5px;
+  background: #ed8e27;
+  color: #fff;
+  font-size: 17px;
+}
+
+.simple-card-page {
+  position: fixed;
+  inset: 0;
+  padding: 0;
+  background: #000;
+}
+
+.simple-card {
+  width: 500px;
+  height: 128px;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 1px;
+  padding: 5px;
+  border: 3px solid #081450;
+  background: #000;
+}
+
+.simple-card-image {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #e0a900;
+  object-fit: cover;
+}
+
+.placeholder-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff6c3;
+  color: #ddb623;
+  font: 38px Georgia, 'Times New Roman', serif;
+}
+
+.simple-card-copy {
+  display: grid;
+  grid-template-rows: 43px 1fr;
+}
+
+.simple-card-title,
+.simple-card-description {
+  margin: 0;
+  padding-left: 17px;
+  border: 1px solid #d89c00;
+}
+
+.simple-card-title {
+  color: #f5a000;
+  font: 38px Georgia, 'Times New Roman', serif;
+  line-height: 41px;
+}
+
+.simple-card-description {
+  padding-top: 3px;
+  border-color: #6d6d6d;
+  color: #d6d6d6;
+  font: 22px Georgia, 'Times New Roman', serif;
+}
+
+.simple-website-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  text-align: center;
+}
+
+.website-header {
+  padding-top: 16px;
+  background: #f29226;
+}
+
+.website-header img {
+  width: min(1050px, 75vw);
+  display: block;
+  margin: 0 auto;
+}
+
+.website-header nav {
+  padding: 12px 0 34px;
+  font-size: 31px;
+}
+
+.website-header nav a {
+  margin: 0 8px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.website-main {
+  flex: 1;
+  padding: 95px 20px 70px;
+}
+
+.website-main section + section {
+  margin-top: 57px;
+}
+
+.website-main h1 {
+  margin: 0 0 58px;
+  font-size: 42px;
+}
+
+.website-main p {
+  font-size: 31px;
+}
+
+.simple-website-page footer {
+  padding: 65px 20px;
+  background: #f5ce82;
+  color: #fff;
+  font-size: 30px;
+}
+
+@media (max-width: 800px) {
+  .profile-card { grid-template-columns: 1fr; padding: 30px; }
+  .profile-copy { padding-top: 25px; }
+  .profile-copy h1 { font-size: 28px; }
+  .profile-copy p { font-size: 23px; }
+  .simple-card { max-width: 100%; }
+}
